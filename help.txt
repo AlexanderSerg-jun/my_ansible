@@ -1,0 +1,4 @@
+ansible-playbook  -i playbook/inventory/prod.yml  playbook/site.yml  --ask-vault-pass  (ключ --ask-vault-pass) используется что бы ansible запросил пароль
+ansible-vault encrypt playbook/group_vars/el/examp.yml --vault-password-file vault_password.txt  ( шифрует файлы, используя txt файл с паролем)
+для работы с докер окружением необходимо использовать образ centos9
+необходимо установить python3 для образа ubuntu
